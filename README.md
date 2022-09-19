@@ -6,7 +6,6 @@ This project was created to implement an Api using PocketBase as the main authen
 
 ## Install
 
-Configure firebase.json and .firebaserc to upload to firebase functions.
 
 ```bash
   cd functions
@@ -14,3 +13,13 @@ Configure firebase.json and .firebaserc to upload to firebase functions.
   npm run serve
 ```
     
+## Upload to functions
+
+Configure firebase.json and .firebaserc to upload to firebase functions.
+
+```bash
+  cd functions
+  firebase use default
+  firebase login
+  firebase deploy --only functions
+```
